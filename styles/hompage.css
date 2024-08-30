@@ -1,0 +1,77 @@
+/* Hero section stles */
+.hero-section {
+    background-image: url(../images/background/website-display.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    height: 300px;
+}
+/* Adding textoverlays on headings */
+.hero-section>.top-heading {
+    padding: 1px 20px;
+    background-color: #11122b;
+    color:#cbcbcb;
+    width: 290px;
+    border-radius: 2px; 
+}
+.hero-section>.bottom-heading {
+    padding: 1px 20px;
+    background-color: #fd5c63;
+    color:#11122b;
+    width: 107px;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+/* Creating featurescolumns with animation */
+.features-section {
+    height: 400px;
+    background-image: url(../images/background/html\ column\ outline.jpg);
+    background-color: #FFC0CB;
+    border-top: 10px solid black;
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Ubuntu Condensed', sans-serif ;
+    box-shadow: inset 0px -26px 79px -8px rgba( 0, 0, 0, 0.8);
+}
+.features-section>.columns-wrapper {
+    justify-content: space-between;
+    display: flex;
+    width: 1000px;
+}
+.features-section>.columns-wrapper>.column {
+        border-bottom: 5px solid transparent;
+        border-radius: 10px;
+        text-align: center;
+        margin: 32px;
+        padding: 20px;
+        transition: 1s;
+}
+/* Hovering */
+.features-section>.columns-wrapper>.column:hover {
+    border-bottom: 5px solid #11122b;
+}
+
+/* NthChild */
+
+/* nthchild 1 */
+.features-section>.columns-wrapper>.column :nth-child(1) {
+    font-size: 3em;
+}
+/* nthchild 2 */
+.features-section>.columns-wrapper>.column :nth-child(2) {
+     font-size: 1.5em;
+     font-weight: 900;
+     height: 50px;
+     transition: 1s;
+}
+.features-section>.columns-wrapper>.column :nth-child(2):hover {
+    letter-spacing: 2px;
+}
+/* nthchild 3 */
+.features-section>.columns-wrapper>.column :nth-child(3) {
+    letter-spacing: 2px;
+}
